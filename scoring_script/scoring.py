@@ -10,9 +10,9 @@ from ta.volatility import AverageTrueRange
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 #Import the API Keys from the st.secrets (from the Streamlit secrets file)
-openai_api_key = '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'
-bing_api_key = '8b0ab204b2e1424c95ec0485fe954cbf'
-POLYGON_API_KEY = 'WdsJtYFC_4MGCIpyWrB8diTR6S9aA0aW'
+openai_api_key = st.secrets["openai_api_key"]
+bing_api_key = st.secrets["bing_api_key"]
+POLYGON_API_KEY = st.secrets["POLYGON_API_KEY"]
 
 # Load the trained model and scaler
 model_path = 'model/model.pkl'
